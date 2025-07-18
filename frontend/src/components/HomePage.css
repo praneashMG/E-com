@@ -1,0 +1,112 @@
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background: #111;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .navbar ul li {
+        cursor: pointer;
+    }
+
+    .header-right {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .header-right button {
+        background: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .cart {
+        position: relative;
+    }
+
+    .cart img {
+        width: 24px;
+    }
+
+    .cart-count {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background: #ff0;
+        color: #000;
+        border-radius: 50%;
+        padding: 2px 5px;
+        font-size: 12px;
+    }
+
+    .carousel .legend {
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .promo-banner {
+        text-align: center;
+        padding: 50px 20px;
+        background: #222;
+    }
+
+    .promo-banner h1 {
+        font-size: 50px;
+        margin: 0;
+        color: #33ff33;
+    }
+
+    .promo-banner p {
+        font-size: 20px;
+        margin: 10px 0 30px;
+    }
+
+    .search-bar {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .search-bar select, .search-bar input {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .search-bar button {
+        padding: 10px 20px;
+        background: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .footer {
+        padding: 20px;
+        text-align: center;
+        background: #111;
+        font-size: 16px;
+        color: #ff0;
+    }

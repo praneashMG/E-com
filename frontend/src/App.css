@@ -1,0 +1,4807 @@
+
+body {
+    font-family: 'Calibri', sans-serif;
+
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+.navbar, .navbar-menu, .navbar-brand, .dropdown-toggle, .dropdown-menu, .dropdown-item, .btn, #cart, #cart_count {
+  font-family: 'Cambria', serif;
+}
+/* Home.css */
+
+/* Change the background color of the entire home screen */
+body, .slider-container, .container, .filters, #products_heading, .category-card {
+  background-color: #ffffff; /* Light grey background */
+}
+
+/* Ensure the text is visible against the new background */
+.slider-title, .slider-description, .slider-button, .category-name {
+  color: #ffffff; /* Dark text color */
+}
+
+/* Optional: Add padding and adjust other styles */
+.slider-container {
+  padding: 20px;
+}
+
+
+
+
+/* HEADER CSS */
+
+
+/* Header.css */
+
+/* Main Navbar Styling */
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 20px;
+}
+
+.navbar-brand img {
+  max-height: 50px;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu li {
+  margin: 0 10px;
+}
+
+.navbar-menu .nav-link {
+  color: #333;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.navbar-menu .nav-link:hover {
+  color: #007bff;
+}
+
+.dropdown-toggle {
+  color: #333;
+  font-weight: 500;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.avatar-nav {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+#cart {
+  color: #333;
+  font-weight: 500;
+}
+
+#cart_count {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+/* footer */
+.footer {
+  background-color: white;
+  color: #6c757d; /* Optional: Adjust the text color */
+}
+
+.footer a {
+  color: #6c757d;
+}
+
+.footer a:hover {
+  color: #343a40; /* Optional: Adjust the hover color */
+}
+
+
+/* categories */
+/* Container for the category cards */
+
+/* gapsss */
+/* General reset for margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove margin and padding for header and slider */
+header {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Optional: Add box-sizing to all elements to prevent overflow */
+* {
+  box-sizing: border-box;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(66, 66, 66, 0.2);
+  border: 0px;
+  background-clip: padding-box;
+  border-radius: 5px;
+}
+  
+
+#search_btn {
+  background-color: #000000;
+}
+
+.input-group {
+  width: 90%;
+  margin-right: 35%;
+}
+
+#search_field {
+  height: 2.4rem;
+  padding: 1rem;
+}
+
+#login_btn,
+#view_btn {
+  background-color: #ffffff;
+  padding: 0.4rem 1.8rem;
+  font-family: calibri;
+}
+
+#cart {
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+#cart_count {
+  background-color: #ffffff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.2rem;
+  color: rgb(214, 210, 210);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Home page */
+#products_heading {
+  margin-top: 1.8rem;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-title a {
+  color: #2e2e2e;
+}
+
+.card-title a:hover {
+  color: #fa9c23;
+  text-decoration: none;
+}
+
+.card-text {
+  font-size: 1.4rem;
+}
+
+
+
+
+
+#view_btn {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #23cbfa;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.card-img-top {
+  width: 200px;
+  height: 150px;
+}
+/* 
+.ratings {
+  font-size: 1.2rem;
+  color: #fdcc0d;
+} */
+/* 
+#no_of_reviews {
+  font-size: 0.85rem;
+  color: grey;
+  margin-left: 0.5rem;
+} */
+
+/* Footer */
+footer {
+  margin-top: 8rem;
+  color: grey;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Ratings */
+
+.rating-outer {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+  color:  #175cff;
+}
+
+.rating-outer::before {
+  content: '\f006 \f006 \f006 \f006 \f006';
+}
+
+.rating-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.rating-inner::before {
+  /* content: '\f005 \f005 \f005 \f005 \f005'; */
+  color: #f8ce0b;
+}
+
+/* Product Details Page */
+/* #product_id {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+#product_price {
+  font-size: 2rem;
+  font-weight: bold;
+} */
+/* 
+#cart_btn,
+#review_btn {
+  border-radius: 2rem;
+  background-color:  #175cff;
+  border: none;
+  padding: 0.5rem 2rem;
+} */
+
+#product_seller {
+  color: grey;
+  font-size: 0.9rem;
+}
+
+#stock_status {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-left: 0.3rem;
+}
+
+.redColor {
+  color: red;
+}
+
+.greenColor {
+  color: green;
+}
+
+#product_image {
+  margin-top: 9rem;
+}
+
+/* Loader */
+.loader {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  width: 80px;
+  height: 80px;
+  padding-left: 0;
+}
+.loader:after {
+  content: ' ';
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #35f424;
+  border-color: #fa9c23 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Cart */
+
+.cart-item {
+  margin: 1.8rem 0rem;
+  padding: 0rem 0.7rem;
+}
+
+.cart-item a {
+  color: grey;
+}
+
+#delete_cart_item {
+  color: red;
+  background: white;
+  padding: 0.3rem 0.5rem;
+  font-size: 1.1rem;
+  border: none;
+}
+
+#card_item_price {
+  color: #febd69;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+#checkout_btn,
+.review-btn {
+  background-color:  #000000;
+  border-color:  #175cff;
+  margin-top: 2rem;
+  border-radius: 5rem;
+}
+
+#view_order_details {
+  background-color: #fa9c23;
+  border-color: #23fa9d;
+}
+
+#order_summary {
+  border: 1px solid #e3e3e3;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+}
+
+.order-summary-values {
+  float: right;
+  font-weight: bold;
+}
+
+.stockCounter input {
+  border: none;
+  width: 3rem;
+  text-align: center;
+}
+
+.plus,
+.minus {
+  padding: 0.1rem 0.5rem;
+}
+
+.stockCounter input::-webkit-outer-spin-button,
+.stockCounter input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: white;
+}
+
+/* Login & Register */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+
+  font-weight: 700;
+}
+
+.wrapper form {
+  padding: 2.5rem 3rem;
+}
+
+.wrapper form .btn {
+  background-color:  #191919;
+  border-color:  #175cff;
+  color: white;
+  margin-top: 2.5rem;
+}
+
+.wrapper form a {
+  font-size: 0.9rem;
+  color: grey;
+}
+
+/* Avatar */
+.avatar {
+  display: inline-block;
+  margin-bottom: 0;
+  height: 3rem;
+  width: 3rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* Makes the image circular */
+}
+
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/* Header User Profile */
+
+.avatar-nav {
+  margin-right: 0.6rem;
+  height: 2.2rem;
+  width: 2.2rem;
+}
+
+/* Checkout Steps */
+
+.checkout-progress div {
+  box-sizing: border-box;
+}
+
+.checkout-progress {
+  display: block;
+  clear: both;
+  margin: 20px auto;
+  width: auto;
+  font-family: sans-serif;
+  overflow: auto;
+}
+
+.step {
+  margin: 0;
+  border: 0;
+  letter-spacing: 1px;
+  line-height: 30px;
+  padding: 5px 10px 5px 15px;
+  color: grey;
+  text-decoration: none;
+  cursor: default;
+  font-weight: bold;
+  float: left;
+  height: auto;
+}
+
+.incomplete {
+  background: #eeeeee;
+}
+/* 
+.active-step {
+  background: #175cff;
+  color: #fff;
+} */
+
+.triangle-active {
+  float: left;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-left: 15px solid #000000;
+  border-bottom: 20px solid transparent;
+  margin-left: -1px;
+}
+
+.triangle2-active {
+  width: 0;
+  float: left;
+  border-top: 20px solid rgb(0, 0, 0);
+  border-left: 15px solid #fff;
+  border-bottom: 20px solid rgb(0, 0, 0);
+  margin-right: -1px;
+}
+
+.triangle-incomplete {
+  float: left;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-left: 15px solid #eeeeee;
+  border-bottom: 20px solid transparent;
+  margin-left: -1px;
+}
+
+.triangle2-incomplete {
+  width: 0;
+  float: left;
+  border-top: 20px solid #eeeeee;
+  border-left: 15px solid #fff;
+  border-bottom: 20px solid #eeeeee;
+  margin-right: -1px;
+}
+
+/* User Profile */
+
+.avatar-profile {
+  height: 16rem;
+  width: 16rem;
+}
+
+.user-info h4 {
+  font-weight: 800;
+  color: grey;
+  margin-top: 2rem;
+}
+
+.user-info p {
+  font-size: 1.1rem;
+}
+
+#edit_profile {
+  background-color: #fa9c23;
+  border-color: #fa9c23;
+}
+
+/* Confirm Order */
+
+.order-confirm p,
+.order-details p {
+  margin-left: 1.5rem;
+}
+
+.update-btn {
+  background-color: #fa9c23;
+  border-color: #fa9c23;
+  color: white;
+}
+
+.update-btn:hover {
+  color: white;
+}
+
+/* Pagination */
+.page-item.active .page-link {
+  background-color: #000000;
+  border-color: #ffffff;
+}
+
+.page-link {
+  color: #fa9c23;
+}
+
+.page-link:hover {
+  color: #fa9c23;
+}
+
+/* Admin Sidebar */
+
+.sidebar-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  min-height: 100vh;
+  font-weight: normal;
+
+  margin-top: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+#sidebar {
+  min-width: 100%;
+  max-width: 100%;
+  background: #000000;
+  color: #971111;
+  transition: all 0.3s;
+}
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #232f3e;
+}
+#sidebar ul.components {
+  padding: 5px 0px;
+  border-bottom: 1px solid #232f3e;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+#sidebar ul li a:hover {
+  color: #232f3e;
+  background: #fff;
+}
+
+#sidebar ul li div.dropdown-menu a{
+  color: black;
+
+}
+
+#sidebar ul li a i {
+  margin-right: 0.3rem;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded='true'] {
+  color: #fff;
+  background: #232f3e;
+}
+a[data-toggle='collapse'] {
+  position: relative;
+}
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 1rem !important;
+  padding-left: 30px !important;
+  background: #232f3e;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+/* Products List Admin */
+#products_table .btn {
+  padding: 0.2rem 0.5rem;
+  margin-left: 0.4rem;
+}
+
+
+
+
+/* Add this CSS to your stylesheet */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white; /* Adjust the background color as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better visibility */
+    padding: 10px 0; /* Adjust padding as needed */
+}
+
+#products_heading {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 80px; /* Adjust this value to prevent content from being hidden behind the fixed header */
+}
+
+
+
+
+
+
+
+
+/* Add this CSS to your stylesheet */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgb(255, 255, 255); /* Adjust the background color as needed */
+  box-shadow: 0 4px 8px rgba(254, 254, 254, 0.1); /* Optional: add shadow for better visibility */
+  padding: 10px 0; /* Adjust padding as needed */
+}
+
+.navbar {
+  margin: 0; /* Ensure no margin is applied */
+}
+
+.container {
+  margin-top: 80px; /* Adjust this value to prevent content from being hidden behind the fixed header */
+}
+
+
+
+
+
+/* Add this CSS to your stylesheet */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white; /* Adjust the background color as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better visibility */
+  padding: 10px 0; /* Adjust padding as needed */
+}
+
+.navbar {
+  margin: 0; /* Ensure no margin is applied */
+}
+
+/* Adjust this value to prevent content from being hidden behind the fixed header */
+.container {
+  margin-top: 80px;
+}
+
+/* Add styles for the name and cart elements */
+.navbar .avatar-nav span,
+#cart,
+#cart_count,
+.navbar .dropdown-toggle {
+  color: rgb(0, 0, 0); /* Change color to black */
+}
+
+
+
+
+.navbar-brand img {
+  margin-left: 100px; /* Adjust this value to move the image to the right */
+  /* Alternatively, you can use padding instead of margin */
+  /* padding-left: 10px; */
+}
+
+
+
+
+/* Example CSS for dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 0.25rem;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
+
+
+
+
+
+
+
+
+/* Home.css */
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #2980b9;
+}
+
+
+
+
+
+.custom-link {
+  color: blue !important;
+}
+
+
+
+
+
+
+
+.filters {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.filter-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.filter-logo img {
+  width: 100px; /* Set a fixed width */
+  height: 100px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  border-radius: 50%; /* Optional: Makes the image circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-logo p {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.filter-logo:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+.filter-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.filter-logo img {
+  width: 100px; /* Set a fixed width */
+  height: 100px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  border-radius: 50%; /* Optional: Makes the image circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-logo p {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.filter-logo:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer arangement */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  background-color: #f8f9fa; /* Adjust as needed */
+  padding: 1rem 0;
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+}
+
+.text-dark {
+  color: #343a40; /* Adjust as needed */
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.filter-logo {
+  width: 45%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  margin-right: auto;
+}
+
+.right {
+  margin-left: auto;
+}
+
+
+/* Navbar.css */
+.navbar {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 50px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black; /* Set text color to black */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #007bff; /* Optional: Change color on hover */
+}
+
+
+
+
+
+
+
+.gradient-custom {
+  background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
+    linear-gradient(121.28deg, #669600 0%, #ff0000 100%),
+    linear-gradient(360deg, #0029ff 0%, #8fff00 100%),
+    radial-gradient(100% 164.72% at 100% 100%, #6100ff 0%, #00ff57 100%),
+    radial-gradient(100% 148.07% at 0% 0%, #fff500 0%, #51d500 100%);
+  background-blend-mode: screen, color-dodge, overlay, difference, normal;
+}
+.carousel-indicators {
+  border-radius: 0%;
+  width: 10px;
+  height: 10px;
+}
+
+
+
+.footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+}
+
+.footer .text-reset {
+  color: #6c757d !important;
+}
+
+.footer .text-reset:hover {
+  color: #343a40 !important;
+}
+
+.footer .fw-bold {
+  font-weight: bold;
+}
+
+.footer .me-3,
+.footer .me-4,
+.footer .me-5 {
+  margin-right: 1rem !important;
+}
+
+.footer .text-uppercase {
+  text-transform: uppercase;
+}
+
+.footer .text-muted {
+  color: #6c757d !important;
+}
+
+.footer .border-bottom {
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  padding: 20px 0;
+}
+
+.footer .text-reset {
+  color: #6c757d !important;
+}
+
+.footer .text-reset:hover {
+  color: #343a40 !important;
+}
+
+.footer .fw-bold {
+  font-weight: bold;
+}
+
+.footer .me-3,
+.footer .me-4,
+.footer .me-5 {
+  margin-right: 1rem !important;
+}
+
+.footer .text-uppercase {
+  text-transform: uppercase;
+}
+
+.footer .text-muted {
+  color: #6c757d !important;
+}
+
+.footer .border-bottom {
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+
+
+
+.container {
+  width: 4000%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header section */
+/* header {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+
+header nav a {
+    color: #fff;
+    margin-right: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    transition: 0.2s;
+    text-decoration: none;
+} */
+
+a.active,
+a:hover {
+    /* background: #14ff72cb; */
+    border-radius: 2px;
+}
+/* Header section */
+
+/* Carousel */
+.custom-carousel {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-carousel .custom-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  background-position: 50% 50%;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.custom-carousel .custom-item.custom-active {
+  opacity: 1;
+}
+
+.custom-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.custom-content .custom-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.custom-content .custom-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.custom-content .custom-des {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.custom-content .custom-btn button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+.custom-content .custom-btn button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+
+
+
+
+.thumbnail-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.thumbnail {
+  cursor: pointer;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.thumbnail:hover {
+  border-color: #007bff; /* Blue border on hover */
+}
+
+.main-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+element {
+  cursor: crosshair;
+  width: 100;
+  height: auto;
+  font-size: 0px;
+  position: relative;
+  user-select: none;
+}
+
+
+
+
+.navbar {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #eaeaea;
+  padding-top: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000; /* Black text color */
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #007bff; /* Blue color on hover */
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+#login_btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#login_btn:hover {
+  background-color: #007bff;
+}
+
+#cart {
+  color: #000;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+#cart_count {
+  background-color: #000000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.avatar-nav img {
+  border-radius: 50%;
+}
+
+.text-dark {
+  color: #000 !important;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
+
+/* Align the search bar to the right corner */
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-container input[type="text"] {
+  width: 100%;
+  max-width: 200px; /* Adjust as needed */
+  padding: 0.5rem;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-container button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Ensures the search bar is on the same line as other elements in the nav */
+.navbar .col-md-6 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+
+
+
+/* homepage.css */
+
+/* General Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Section Styles */
+#products_heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Container for products */
+#products {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Filters and Categories */
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 15px rgba(237, 0, 0, 0.3);
+
+}
+
+
+/* Styling for individual category cards */
+.filter-logo {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter-logo:hover .category-card {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+/* Container Styles */
+.testimonial-container {
+  background: #f9f9f9; /* Light background */
+  border-radius: 20px; /* Rounded corners */
+}
+
+/* Card Styles */
+.MDBCard {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.MDBCardBody {
+  padding: 0;
+}
+
+/* Carousel Styles */
+.MDBCarousel {
+  padding: 0 1rem;
+}
+
+.MDBCarouselItem {
+  display: flex;
+  justify-content: center;
+}
+
+/* Image Styles */
+.rounded-circle {
+  border: 3px solid #e0e0e0;
+  transition: transform 0.3s ease;
+}
+
+.rounded-circle:hover {
+  transform: scale(1.05);
+}
+
+/* Text Styles */
+h4 {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+}
+
+p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-lg-start {
+  text-align: left;
+}
+
+.text-primary {
+  color: #007bff;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .rounded-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #333;
+
+} 
+
+#products_heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+
+
+
+/* BrandsPage.css */
+/* 
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+} */
+
+
+
+
+
+/* .brand-card img {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 20px auto;
+  transition: transform 0.3s ease;
+  display: block;
+} */
+
+
+
+
+
+
+/* General Styles */
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+/* .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+} */
+
+/* Header */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Loader Styles */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader div {
+  width: 1rem;
+  height: 1rem;
+  background-color: #000;
+  margin: 0.2rem;
+  animation: loader-animation 1s infinite ease-in-out;
+}
+
+@keyframes loader-animation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+
+
+
+
+
+
+/* Ensure to link this CSS file in your React component or include it in your global styles */
+.footer {
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text */
+}
+/* Style for the section with social media icons */
+.footer .d-flex {
+  border-bottom: 1px solid #e0e0e0; /* Light gray border */
+  padding-bottom: 20px;
+}
+.footer .text-reset {
+  color: #000000; /* Black text color for links */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+.footer .text-reset:hover {
+  color: #0071e3; /* Change color on hover, example blue */
+}
+/* Styling the footer text content */
+.footer h6 {
+  color: #000000; /* Black color for headings */
+  font-size: 1.1rem; /* Slightly larger font size for headings */
+}
+.footer p {
+  color: #333333; /* Dark gray color for paragraph text */
+  font-size: 0.9rem; /* Slightly smaller font size for paragraphs */
+}
+
+/* Styling the background of the final footer section */
+.footer .text-center.p-4 {
+  background-color: #ffffff; /* Light gray background for the bottom section */
+}
+
+/* Unique styling similar to Apple */
+.footer .text-uppercase {
+  letter-spacing: 0.1em; /* Spacing out uppercase text */
+  font-weight: 600; /* Slightly bolder font for headings */
+}
+
+/* Adjust spacing and alignment */
+.footer .mx-auto {
+  margin: 0 auto; /* Center columns */
+}
+
+.footer .me-5, .footer .me-4 {
+  margin-right: 1.5rem; /* Right margin for spacing social icons */
+}
+
+.footer .me-2 {
+  margin-right: 0.5rem; /* Smaller margin for contact icons */
+}
+
+.footer .me-3 {
+  margin-right: 1rem; /* Margin for spacing icons */
+}
+
+
+
+
+
+
+
+
+
+
+/* Basic font setup for the site */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Heading fonts */
+h1, h2, h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Review Modal */
+.modal-header, .modal-footer {
+  border: none;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.stars {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.stars li {
+  cursor: pointer;
+  color: #ddd;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  transition: color 0.3s;
+}
+
+.stars li.orange {
+  color: #000000;
+}
+
+.stars li.yellow {
+  color: #ffeb3b;
+}
+
+#review {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.review-btn {
+  background-color: #ff9800;
+  border: none;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.review-btn:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Reviews Display */
+.review {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.review:last-child {
+  border-bottom: none;
+}
+
+.review .rating {
+  display: flex;
+  align-items: center;
+}
+
+.review .rating-inner {
+  width: 100%;
+  height: 1rem;
+  background-color: #151514;
+  margin-right: 10px;
+}
+
+.review .review-text {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.review .review-author {
+  font-weight: bold;
+}
+
+.review .review-date {
+  color: #888;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .review .rating-inner {
+      width: 100%;
+  }
+
+  .review .review-text {
+      font-size: 0.875rem;
+  }
+}
+
+
+
+
+
+
+.user-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #000;
+  background-color: #f5f5f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avatar-profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.avatar-profile img:hover {
+  transform: scale(1.1);
+}
+
+#edit_profile {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#edit_profile:hover {
+  background-color: #333;
+  transform: translateY(-3px);
+}
+
+.col-12.col-md-5 h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  color: #000;
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+}
+
+.col-12.col-md-5 p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #333;
+  transform: translateY(-3px);
+}
+
+.btn-danger {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #333;
+  transform: translateY(-3px);
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General card styles */
+.card {
+  border: 1px solid #ccc; /* Light border for subtle separation */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Specific styles for each card type */
+.bg-primary {
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text */
+}
+
+.bg-success {
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text */
+}
+
+.bg-danger {
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text */
+}
+
+.bg-info {
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text */
+}
+
+.bg-warning {
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text */
+}
+
+/* Footer link styles */
+.card-footer {
+  border-top: 1px solid #eee; /* Light gray border at the top */
+  background-color: #f8f9fa; /* Light gray background */
+  color: #000000; /* Black text */
+}
+
+.card-footer a {
+  color: #000000; /* Black text */
+  text-decoration: none; /* Remove underline */
+}
+
+.card-footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Adjust text size */
+.card-font-size {
+  font-size: 16px; /* Adjust as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+/* Profile Component CSS */
+
+/* General Styles */
+body {
+  background-color: #f7f7f7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+}
+
+/* User Info Section */
+.user-info {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Avatar Styles */
+.avatar-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: #eaeaea;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-profile img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #000;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+}
+
+.btn-danger {
+  background-color: #000;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #333;
+}
+
+/* Typography */
+h4 {
+  color: #000;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-info {
+      padding: 20px;
+  }
+
+  .avatar-profile {
+      width: 120px;
+      height: 120px;
+  }
+
+  .btn-block {
+      width: 100%;
+      text-align: center;
+  }
+}
+
+
+
+
+
+
+/* Black and White Theme for Review Section */
+
+/* ... existing styles ... */
+
+.review-btn {
+  background-color: #000000;  /* White background */
+  color: #000;  /* Black text */
+  border: 1px solid #000000;  /* Optional: light gray border for contrast */
+}
+
+.review-btn:hover {
+  background-color: #000000;  /* Light gray background on hover */
+  color: #000;  /* Black text */
+}
+
+/* ... existing styles ... */
+
+
+
+
+
+
+.reviews {
+  font-family: Arial, sans-serif;
+}
+
+.review-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.rating-outer {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #e1e1e1; /* Gray color for unfilled stars */
+}
+
+.rating-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #ffc107; /* Yellow color for filled stars */
+}
+
+.rating-outer::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: FontAwesome;
+}
+
+.rating-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: FontAwesome;
+}
+
+
+
+
+
+
+/* src/App.css */
+.tab-image {
+  height: 160px;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0.375rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.tab-panel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .tab-panel {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f1f1f1 !important;
+}
+
+/* body .container {
+  max-width: 1100px;
+} */
+
+#filter-buttons button {
+  border-radius: 3px;
+  background: #fff;
+  border-color: transparent;
+}
+
+#filter-buttons button:hover {
+  background: #ddd;
+}
+
+#filter-buttons button.active {
+  color: #fff;
+  background: #6c757d;
+}
+
+#filterable-cards .card {
+  width: 15rem;
+  border: 2px solid transparent;
+}
+
+#filterable-cards .card.hide {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #filterable-cards {
+    justify-content: center;
+  }
+
+  #filterable-cards .card {
+    width: calc(100% / 2 - 10px);
+  }
+}
+
+
+
+
+
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.navbar .dropdown-toggle {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar .dropdown-menu {
+  min-width: 200px;
+}
+
+.navbar .dropdown-menu a {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+
+
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 10px 20px;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.dropdown-toggle {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  min-width: 200px;
+}
+
+.dropdown-menu a {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+
+
+
+
+/* Add this to your CSS file */
+.dropdown-toggle .bi-category {
+  font-size: 1.5rem; /* Adjust size as needed */
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+/* Add or update this in your CSS file */
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  padding-right: 2.5rem; /* Space for the arrow icon */
+}
+
+.dropdown-toggle::after {
+  display: none; /* Hide the default dropdown arrow */
+}
+
+.dropdown-toggle .bi-category {
+  font-size: 1.5rem; /* Adjust size if needed */
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.dropdown-menu {
+  z-index: 1050; /* Ensure dropdown menu is above other content */
+}
+
+
+
+
+
+
+/* CSS for dropdown button */
+.dropdown-toggle {
+  background: transparent; /* Transparent background */
+  border: none; /* Remove border */
+  box-shadow: none; /* Remove shadow */
+  padding: 0; /* Remove padding */
+  font-size: 1rem; /* Adjust font size if needed */
+  text-decoration: none; /* Ensure no text decoration */
+  display: flex; /* Ensure alignment of text and icon */
+  align-items: center; /* Vertically center icon and text */
+}
+
+/* Ensure no underline for the dropdown links */
+.dropdown-menu .dropdown-item {
+  text-decoration: none; /* Remove underline */
+}
+
+/* Remove underline on hover and focus */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  text-decoration: none; /* Remove underline on hover and focus */
+  background-color: #f8f9fa; /* Optional: Mild background on hover */
+}
+
+/* Ensure no underline for the Link component within dropdown */
+.dropdown-menu .dropdown-item a {
+  text-decoration: none; /* Remove underline */
+}
+
+/* Optionally style the dropdown items */
+.dropdown-menu .dropdown-item {
+  padding: 0.5rem 1rem; /* Adjust padding for a mild button appearance */
+}
+
+
+
+
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px rgba(237, 0, 0, 0.3);
+
+  margin-bottom: 20px;
+}
+
+.slider-image {
+  flex: 1;
+  text-align: center;
+}
+
+.slider-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.slider-content {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.slider-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.slider-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #666;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .slider-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .slider-content {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  .slider-title {
+    font-size: 22px;
+  }
+
+  .slider-description {
+    font-size: 16px;
+  }
+
+  .slider-button {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+.custom-card {
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 200px; /* Fixed height */
+  width: 100%; /* Ensures the card spans the full width of its container */
+  max-width: 1000px; /* Set a maximum width for the card */
+  margin: auto; /* Centers the card within the container */
+  overflow: hidden; /* Ensures content doesn't overflow the card */
+}
+
+.custom-card-body {
+  padding: 2rem;
+  height: 100%; /* Makes the body span the full height of the card */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+}
+
+.custom-avatar {
+  border: 2px solid #ccc;
+  padding: 5px;
+}
+
+.custom-text-col {
+  text-align: left;
+}
+
+.custom-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.custom-testimonial-text {
+  font-style: italic;
+  color: #666;
+  overflow-y: auto; /* Adds a scrollbar if text overflows vertically */
+  max-height: 150px; /* Ensures the text area has a fixed height */
+}
+
+@media (max-width: 768px) {
+  .custom-testimonial-container,
+  .custom-card {
+    width: 100%;
+    max-width: 90%; /* Adjusts width for smaller screens */
+  }
+
+  .custom-text-col {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: #ffffff;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.circular-image__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.circular-image:hover .circular-image__img {
+  transform: scale(1.1);
+}
+
+.content-container {
+  flex: 2;
+  padding-left: 50px;
+}
+
+.content-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 20px;
+}
+
+.content-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #6e6e73;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .image-container, .content-container {
+      padding: 0;
+  }
+
+  .content-container {
+      padding-top: 30px;
+  }
+}
+
+
+
+
+
+
+/* Global Font Settings */
+body {
+  font-family: Calibri, Arial, sans-serif;
+}
+
+/* Testimonial Component Styles */
+.custom-testimonial-container {
+  font-family: Calibri, Arial, sans-serif;
+}
+
+.custom-name {
+  font-family: Calibri, Arial, sans-serif;
+  font-weight: bold; /* Adjust weight if needed */
+}
+
+.custom-testimonial-text {
+  font-family: Calibri, Arial, sans-serif;
+  font-weight: normal; /* Adjust weight if needed */
+}
+
+.custom-card-body {
+  font-family: Calibri, Arial, sans-serif;
+}
+
+
+
+
+
+/* In your main CSS file or in a global CSS file */
+
+
+body {
+  font-family: 'Calibri', sans-serif;
+}
+/* styles.css */
+
+.navbar, .navbar-menu, .nav-link, .btn, .dropdown-menu, .dropdown-item, #cart, #cart_count {
+  font-family: 'Calibri', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.page-content {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.page-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+.custom-header {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.search-bar {
+  flex-grow: 1;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.icons {
+  gap: 20px;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+
+
+
+
+.custom-header {
+  background-color: #ffffff; /* Light gray background for a clean look */
+  padding: 15px 30px;
+  border-bottom: 2px solid #252525; /* Subtle bottom border */
+  border-top: 2px solid#101010;
+  box-shadow: 0 3px 10px rgba(255, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  height: 5pc;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 28px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #007bff; /* Blue hover effect */
+}
+
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::before {
+  width: 100%; /* Underline effect on hover */
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.search-bar {
+  flex-grow: 1;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.search-bar input {
+  border-radius: 50px;
+  border: 2px solid #eaeaea;
+  padding: 8px 20px;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.icons .btn, .icons .cart-icon {
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.icons .btn:hover, .icons .cart-icon:hover {
+  color: #007bff;
+}
+
+.cart-icon {
+  position: relative;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 7px;
+  font-size: 12px;
+}
+
+.avatar-nav img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.avatar-nav:hover img {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+
+
+
+  /* General Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  /* Cart Item Styles */
+  .cart-item {
+    background: #ffffff;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .cart-item img {
+    border-radius: 5px;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+  }
+
+  .cart-item .row {
+    align-items: center;
+    width: 100%;
+  }
+
+  .cart-item .btn {
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 16px;
+    margin: 0 5px;
+  }
+
+  .cart-item .btn-danger {
+    background-color: #ff4c4c;
+    border: none;
+  }
+
+  .cart-item .btn-primary {
+    background-color: #3f51b5;
+    border: none;
+  }
+
+  #delete_cart_item {
+    color: #ff4c4c;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px 12px;
+    margin-left: auto;
+  }
+
+  #delete_cart_item:hover {
+    color: #e04343;
+  }
+
+  /* Quantity Control Styles */
+  .stockCounter {
+    display: flex;
+    align-items: center;
+  }
+
+  .stockCounter .form-control {
+    text-align: center;
+    width: 50px;
+    height: 40px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: none;
+  }
+
+  /* Order Summary Styles */
+  #order_summary {
+    background: #f8f8f8;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  #order_summary h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .order-summary-values {
+    float: right;
+  }
+
+  #checkout_btn {
+    background-color: #ff4c4c;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+  }
+
+  #checkout_btn:hover {
+    background-color: #e04343;
+  }
+
+  /* Coupon Code and Buttons */
+  #coupon_code input {
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(100% - 140px);
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  #apply_coupon {
+    background-color: #ff4c4c;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  #apply_coupon:hover {
+    background-color: #e04343;
+  }
+
+  #return_to_shop, #update_cart {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  #return_to_shop:hover, #update_cart:hover {
+    background-color: #f8f8f8;
+  }
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cart-table {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cart-column {
+    flex: 1;
+    text-align: center;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    width: 100px;
+    margin-right: 15px;
+}
+
+.cart-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls input {
+    width: 60px;
+    text-align: center;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn-decrease, .btn-increase {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-delete {
+    color: #ff4c4c;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.btn-delete:hover {
+    color: #e04343;
+}
+
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.btn-return, .btn-update {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-return:hover, .btn-update:hover {
+    background-color: #f0f0f0;
+}
+
+.cart-summary {
+    width: 40%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-right: 20px; /* Add margin to the right for spacing */
+}
+
+.cart-summary h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.btn-checkout {
+    background-color: #566bc8;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+
+
+/* Align delete button to the right */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  position: relative; /* Add relative positioning for the delete button */
+}
+
+.cart-item .btn-delete {
+  color: #ff4c4c;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute; /* Absolute positioning to move to the right */
+  right: 20px; /* Distance from the right edge */
+}
+
+.cart-item .btn-delete:hover {
+  color: #e04343;
+}
+
+
+.cart-actions {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  width: 80%;
+  position: relative; /* Ensure the actions section is positioned correctly */
+}
+
+
+
+
+
+
+/* Ensure the rupee symbol is properly aligned */
+.cart-item p, .cart-summary p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Example of additional styling for better alignment */
+.cart-item .cart-column p {
+  margin: 0;
+  display: inline-block;
+}
+
+
+
+
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555;
+}
+
+.btn-outline-danger {
+  border-color: #ff4d4f;
+  color: #ff4d4f;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.btn-outline-danger:hover {
+  background-color: #ff4d4f;
+  color: #fff;
+}
+
+
+
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555;
+}
+
+.btn-outline-danger {
+  border-color: #ff4d4f;
+  color: #ff4d4f;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.btn-outline-danger:hover {
+  background-color: #ff4d4f;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+.product-card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.image-container {
+  position: relative;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.product-icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.icon-btn i {
+  font-size: 1.2rem;
+}
+
+.icon-btn:hover i {
+  color: #e63946;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.product-price {
+  font-size: 1rem;
+  color: #e63946;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-rating span {
+  color: #ffa41c;
+  margin-right: 5px;
+}
+
+
+
+
+
+.wishlist-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.wishlist-title {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.wishlist-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.wishlist-group {
+  width: 100%;
+}
+
+.wishlist-group-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.wishlist-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.wishlist-item {
+  flex: 1 1 23%;
+  min-width: 200px;
+  max-width: 280px;
+}
+
+.wishlist-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.wishlist-image {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+}
+
+.wishlist-details {
+  padding: 15px;
+}
+
+.wishlist-item-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.wishlist-item-price {
+  font-size: 1rem;
+  color: #e63946;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.wishlist-item-old-price {
+  font-size: 0.9rem;
+  color: #888;
+  text-decoration: line-through;
+  margin-left: 0.5rem;
+}
+
+.wishlist-add-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wishlist-add-btn:hover {
+  background-color: #333;
+}
+
+.wishlist-remove-btn {
+  background-color: transparent;
+  color: #888;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+}
+
+.wishlist-remove-btn:hover {
+  color: #e63946;
+}
+
+.wishlist-empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+  width: 100%;
+}
+
+.wishlist-discount-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #e63946;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.move-all-btn {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  margin-top: 20px;
+  float: right;
+}
+
+.move-all-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+.wishlist-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.wishlist-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.wishlist-card {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.wishlist-card img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.wishlist-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.wishlist-item-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.wishlist-item-price {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #ff0000;
+}
+
+.wishlist-add-btn {
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wishlist-add-btn i {
+  margin-right: 8px;
+}
+
+.wishlist-add-btn:hover {
+  background-color: #333;
+}
+
+.wishlist-remove-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: #ff0000;
+  cursor: pointer;
+}
+
+.wishlist-remove-btn i {
+  font-size: 18px;
+}
+
+.wishlist-remove-btn:hover {
+  color: #ff5555;
+}
+
+
+
+.wishlist-icon {
+  display: flex;
+  align-items: center;
+  color: #1f1d1d;
+  text-decoration: none;
+  position: relative;
+}
+
+.wishlist-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: #1f1d1d;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.wishlist-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #dc3545;;
+  color: #fff;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+.wishlist-icon {
+  display: flex;
+  align-items: center;
+  color: #ff5733; /* Default color */
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.wishlist-heart-icon {
+  font-size: 24px;
+  transition: color 0.3s ease-in-out;
+}
+
+.wishlist-icon:hover .wishlist-heart-icon {
+  color: #5d00ff; /* Blue color on hover */
+}
+
+.wishlist-count {
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 7px;
+  font-size: 12px;
+}
+.wishlist-heart-icon {
+  color: #333; /* Initial color */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+.wishlist-heart-icon:hover {
+  color: #ff5252; /* Color on hover */
+}
+/* .slider-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-image img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-content {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+}
+
+.slider-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.slider-description {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.slider-button {
+    background-color: #ff4040;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+} */
+
+
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 150px; /* Adjust based on your design */
+  color: black; /* Set text color to black */
+  background-color: #fff; /* Default background color */
+}
+
+/* Hover effect */
+.category-card:hover {
+  background-color: #f41707; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+
+/* Selected effect */
+.category-card.selected {
+  background-color: #f44336; /* Background color when selected */
+  color: white; /* Text color when selected */
+}
+
+/* Ensure the text color of .category-name also changes on hover and when selected */
+.category-name {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(0, 0, 0); /* Set text color to black */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Text color change on hover */
+.category-card:hover .category-name {
+  color: rgb(255, 255, 255); /* Change text color to white on hover */
+}
+
+/* Text color change when selected */
+.category-card.selected .category-name {
+  color: rgb(255, 255, 255); /* Change text color to white when selected */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .categories {
+      justify-content: flex-start;
+      gap: 0.5rem;
+  }
+  .category-card {
+      width: 100px;
+      padding: 0.5rem;
+  }
+  .category-name {
+      font-size: 0.9rem;
+  }
+}
+.fa-search
+{
+  color: white  ;
+}
+
+
+
+
+
+
+
+/* General styles for the card container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Space between cards */
+  padding: 30px; /* Space around the container */
+  justify-content: space-between; /* Distribute space between cards */
+  /* box-shadow: 0 10px 15px rgba(237, 0, 0, 0.3); */
+
+}
+
+/* Styles for individual cards */
+.unique-card {
+  flex: 1 1 calc(33.333% - 30px); /* Adjust width to fit 3 cards per row minus gap */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Hover effect for cards */
+.unique-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(237, 0, 0, 0.3);
+
+}
+
+/* Styles for the card image */
+.unique-card-image {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+/* Styles for the card content */
+.unique-card-content {
+  padding: 25px; /* Space inside the card */
+  text-align: center;
+}
+
+.unique-card-heading {
+  font-size: 26px; /* Font size for heading */
+  font-family: 'Calibri', sans-serif;
+  color: #333;
+  margin-bottom: 15px; /* Space below heading */
+}
+
+.unique-card-text {
+  font-size: 18px; /* Font size for text */
+  font-family: 'Calibri', sans-serif;
+  color: #666;
+  margin-bottom: 25px; /* Space below text */
+}
+
+.unique-card-button {
+  padding: 12px 24px; /* Space inside button */
+  font-size: 18px; /* Font size for button text */
+  font-family: 'Calibri', sans-serif;
+  color: #fff;
+  background-color: #e33131;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.unique-card-button:hover {
+  background-color: #ff0000;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .unique-card {
+      flex: 1 1 calc(50% - 20px); /* Two cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .unique-card {
+      flex: 1 1 100%; /* One card per row on very small screens */
+  }
+}
+
+
+/* Styles for the View All button */
+.view-all-button {
+  display: inline-block;
+  padding: 12px 24px; /* Add padding for a comfortable click area */
+  font-size: 1rem; /* Adjust font size for readability */
+  font-weight: bold; /* Make the text bold */
+  color: #fff; /* Text color */
+  background-color: #007bff; /* Primary button color (adjust as needed) */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions for hover effect */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect for the button */
+.view-all-button:hover {
+  background-color: #ff2b2b; /* Darker color for hover effect */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+.view-all-button
+{
+  background-color:#f44336;
+}
+/* Focus effect for accessibility */
+.view-all-button:focus {
+  outline: 3px solid rgba(0, 123, 255, 0.5); /* Outline color for focus state */
+  outline-offset: 2px; /* Space between outline and button */
+}
+
+/* Disabled state */
+.view-all-button:disabled {
+  background-color: #d6d6d6; /* Light gray color for disabled state */
+  color: #a0a0a0; /* Gray text color */
+  cursor: not-allowed; /* Change cursor to indicate disabled state */
+  transform: none; /* Remove hover scale effect */
+}
+
+
+
+
+
+
+
+/* Styles for the entire BrandsPage */
+.brands-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+.brands-page h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Grid container for brand cards */
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 20px; /* Increase gap between cards */
+  justify-items: center; /* Center items within each grid cell */
+}
+
+/* Individual brand card */
+.brand-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 200px; /* Reduced height */
+  width: 100%; /* Ensure cards fill the grid cell width */
+  max-width: 250px; /* Adjusted maximum width for larger cards */
+  background-color: #fff; /* Ensure background color is white */
+}
+
+/* Brand image styles */
+.brand-image {
+  width: 100%;
+  height: 130px; /* Increased height for images */
+  object-fit: cover; /* Ensure image covers the container */
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Optional: Center text if using text over image */
+.brand-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Ensure image covers the container */
+}
+
+/* Brand name styles */
+.brand-name {
+  padding: 10px;
+  font-size: 1rem; /* Adjust font size if needed */
+  font-weight: bold;
+  background-color: #fff;
+}
+
+/* Hover effect for brand cards */
+.brand-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .brands-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+  }
+}
+
+@media (max-width: 480px) {
+  .brands-grid {
+      grid-template-columns: 1fr; /* Single column layout for very small screens */
+  }
+}
+
+
+/* Pseudo-element for hover effect */
+.slider-button::before {
+  content: ''; /* Empty content */
+  position: absolute; /* Absolute positioning */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  width: 300%; /* Large width for covering effect */
+  height: 300%; /* Large height for covering effect */
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0)); /* Radial gradient */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transitions for transform and opacity */
+  transform: translate(-50%, -50%) scale(0); /* Initial scale 0 for the effect */
+  opacity: 0; /* Initial opacity 0 */
+}
+
+/* Hover effect on pseudo-element */
+.slider-button:hover::before {
+  transform: translate(-50%, -50%) scale(1); /* Scale to full size */
+  opacity: 1; /* Full opacity */
+}
+
+/* Focus effect for slider buttons */
+.slider-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(255, 105, 135, 0.5); /* Add custom focus outline */
+}
+
+
+
+
+/* Style for slider buttons */
+.slider-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(45deg, #ff1500, #ff0000); /* Gradient background */
+  border: none;
+  border-radius: 50px;
+  text-decoration: none; /* Ensure no underline */
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for slider buttons */
+.slider-button:hover {
+  background-color: #ff0000; /* Solid background color on hover */
+  transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+/* Focus effect for slider buttons */
+.slider-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 105, 135, 0.5); /* Optional focus ring */
+}
+
+
+
+
+
+/* Apply Calibri font to the entire header */
+.custom-header {
+  font-family: 'Calibri', sans-serif;
+}
+
+/* Styling for the Navbar Links */
+.navbar-menu .nav-link {
+  color: #333;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 4px;
+}
+
+.navbar-menu .nav-link:hover {
+  background-color: #f16529;
+  color: white;
+  cursor: pointer;
+}
+
+/* Base styling for both icons */
+.icons .wishlist-icon,
+.icons .cart-icon {
+    position: relative;
+    font-size: 26px;
+    color: #444; /* Default icon color */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect with gradient and glow for wishlist */
+.icons .wishlist-icon:hover {
+    color: #ff6b6b; /* Lighter red */
+    transform: scale(1.25); /* Increase size on hover */
+    text-shadow: 0 0 15px rgba(255, 107, 107, 0.7); /* Brighter red glow */
+    background: linear-gradient(45deg, #ff6b6b, #ff4757);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: pulse-red 1s infinite; /* Pulsing effect */
+}
+
+/* Hover effect with gradient and glow for cart */
+.icons .cart-icon:hover {
+    color: #2ed573; /* Lighter green */
+    transform: scale(1.25); /* Increase size on hover */
+    text-shadow: 0 0 15px rgba(46, 213, 115, 0.7); /* Brighter green glow */
+    background: linear-gradient(45deg, #2ed573, #1e90ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: pulse-green 1s infinite; /* Pulsing effect */
+}
+
+/* Pulsing animation for wishlist */
+@keyframes pulse-red {
+    0% {
+        transform: scale(1.2);
+        text-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+    }
+    50% {
+        transform: scale(1.3);
+        text-shadow: 0 0 20px rgba(255, 107, 107, 1);
+    }
+    100% {
+        transform: scale(1.2);
+        text-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+    }
+}
+
+/* Pulsing animation for cart */
+@keyframes pulse-green {
+    0% {
+        transform: scale(1.2);
+        text-shadow: 0 0 10px rgba(46, 213, 115, 0.5);
+    }
+    50% {
+        transform: scale(1.3);
+        text-shadow: 0 0 20px rgba(46, 213, 115, 1);
+    }
+    100% {
+        transform: scale(1.2);
+        text-shadow: 0 0 10px rgba(46, 213, 115, 0.5);
+    }
+}
+
+/* Count bubble styling */
+.icons .wishlist-icon .wishlist-count,
+.icons .cart-icon .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    background-color: #ff4757; /* Red bubble for wishlist */
+    color: #fff;
+    font-size: 14px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    font-weight: bold;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    z-index: 2; /* Ensure count bubble is above icons */
+}
+
+/* Blue bubble for cart */
+.icons .cart-icon .cart-count {
+    background-color: #1e90ff; /* Blue bubble for cart */
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem; /* Adjust spacing between items as needed */
+}
+
+.nav-menu li {
+  /* Optional: If you want to remove default padding/margins or add specific styles */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  text-decoration: none; /* Ensure links are not underlined */
+  color: #000; /* Change this to your preferred color */
+  padding: 0.5rem 1rem; /* Adjust padding for spacing around the text */
+}
+
+.nav-menu a:hover {
+  color: #007bff; /* Change this to your preferred hover color */
+}
+
+
+
+
+
+
+.footer {
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 576px) {
+  .footer .text-center {
+    text-align: center !important;
+  }
+
+  .footer .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* Ensure your CSS file is imported in your component or main CSS file */
+.custom-card {
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+  border: 1px solid red; /* Border is initially transparent */
+}
+
+.custom-card:hover {
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.6), 0 6px 20px rgba(255, 0, 0, 0.5); /* Red shadow on hover */
+}
+
+
+
+
+
+
+
+
+
+/* General Styles */
+.contact_us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.responsive-container-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bigContainer {
+  width: 100%;
+}
+
+.Container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.responsive-cell-block {
+  flex: 1;
+  max-width: 100%;
+}
+
+.mainImg {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-blk.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.formTable {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.firstRow {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.fullNameArea,
+.emailArea {
+  width: 100%;
+}
+
+.cardHead {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.fullName,
+.email {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.messageArea {
+  margin-bottom: 15px;
+}
+
+.message {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.submit {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+.featured-categories {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  flex: 1 1 calc(20% - 10px); /* Adjusts based on screen size */
+  margin: 5px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s, color 0.2s; /* Added color transition */
+}
+
+.category-card img {
+  width: 100%;
+  max-width: 150px; /* Set a maximum width */
+  height: 150px; /* Set a fixed height */
+  object-fit: cover; /* Ensure image covers the area without distortion */
+  margin-bottom: 15px;
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.category-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.category-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  color: #fff; /* Change text color to white on hover */
+  background: #333; /* Optional: Change background color for better contrast */
+}
+
+.category-card:hover h3, .category-card:hover p {
+  color: #fff; /* Ensure text color is white for h3 and p elements */
+}
+
+@media (max-width: 1200px) {
+  .category-card {
+    flex: 1 1 calc(33.333% - 10px); /* 3 items per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .category-card {
+    flex: 1 1 calc(50% - 10px); /* 2 items per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .category-card {
+    flex: 1 1 100%; /* 1 item per row */
+  }
+}
+
+
+.features-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.feature {
+  flex: 1 1 20%;
+  max-width: 250px;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-15px);
+  background: #333; 
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature:hover .feature-icon,
+.feature:hover .feature-title,
+.feature:hover .feature-description {
+  color: #fff; /* White text on hover */
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #333; /* Default color */
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.feature-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333; /* Default color */
+  transition: color 0.3s ease;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: #666; /* Default color */
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .feature {
+    max-width: 100%;
+    margin: 15px 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .feature {
+    flex: 1 1 45%;
+  }
+}
+
+
+
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.report-section {
+  margin-bottom: 40px;
+}
+
+.report-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color: #f2f2f2;
+}
+
+.table th, .table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 5px 0;
+  font-size: 1.1em;
+}
